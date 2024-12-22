@@ -20,11 +20,15 @@ Required columns in the CSV:
 ImageID_stadium_i: The unique identifier or filename of the image alongside with a stadium Id , unique assigned to each detected stadium in the image (e.g., stadium_1, stadium_2, etc.).
 BoundingBox: The predicted bounding box for the stadium, represented as [x_center,y_center, width, height] in pixel coordinates.
 Example of Submission CSV
+
+
 ImageID_stadiumID	x_center	y_center	width	height
 image1_png_stadium_1	0.506757	0.413007	0.104730	0.096284
 image1_png_stadium_2	0.506757	0.413007	0.104730	0.096284
 51610_png_stadium_1	0.506757	0.413007	0.104730	0.096284
 51610_png_stadium_2	0.506757	0.413007	0.104730	0.096284
+
+
 ⚠️ Important: Ensure having 2 rows per image in the submission CSV!
 Step 2: Generate Predictions
 Run your model on the test set images.
